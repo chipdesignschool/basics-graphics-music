@@ -106,6 +106,13 @@ module lab_top
 
         if (x_2 [w_x +: w_y] < y)  // Parabola
             blue = key [1] ? '1 : y10 [$left (y10) -: w_blue];
+
+        if (x * y < 20000)
+            green = '1;
+        else if (y > x)
+            red = '1;
+        else
+            blue = '1;
     end
 
 endmodule
